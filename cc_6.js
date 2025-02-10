@@ -59,11 +59,11 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
  console.log(applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount)); // expected : [200, 540, 1080, 450, 720]
 
 //Task 7 - Closure 
- function createExpenseTracker () {
-    let totalExpenses= 0 ; 
+ function createExpenseTracker  () {
+    let totalExpenses= 0; 
     return function (expense) {
-         totalExpense += expense; 
-        return`Total Expenses:$$ {totalExpenses}`;
+        totalExpenses += expense;
+        return`Total Expenses: $${totalExpenses}`;
  };
 }
        // Testing 
@@ -74,7 +74,7 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
 // Task 8 - Recursion in Java Script 
  function calculateYearsToPromortion(employeeLevel){
     if(employeeLevel >= 10) return 0; 
-return 2 + calculatedYeasrToPromotion(employeeLevel+1); 
+return 2 + calculateYearsToPromotion(employeeLevel+1); 
     }
  /// testing
  console.log (calculateYearsToPromotion(7)); // Answer:  "Years to Level 10: 6")
