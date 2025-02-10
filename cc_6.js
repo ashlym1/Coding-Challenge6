@@ -72,10 +72,9 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
        console.log(tracker(150));// total expenses should be 350
 
 // Task 8 - Recursion in Java Script 
- function calculateYearsToPromortion(employeeLevel){
-    if(employeeLevel >= 10) return 0; 
-return 2 + calculateYearsToPromotion(employeeLevel+1); 
-    }
+ function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel >= 10) return 0;
+ } 
  /// testing
  console.log (calculateYearsToPromotion(7)); // Answer:  "Years to Level 10: 6")
  console.log (calculateYearsToPromotion(5)); // Expected output: "Years to Level 10: 10")
