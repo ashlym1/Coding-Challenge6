@@ -76,7 +76,7 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
     if (employeeLevel >= 10) {
         return 0 ;
     } 
-    return 2+calculatedYearsToPromotion(employeeLevel+1); // the recursive function to calculate how many years till promotion.
+    return 2 + calculateYearsToPromotion(employeeLevel + 1);  // the recursive function to calculate how many years till promotion.
  } // Function to find out how many years till promotion (not sure it works properly)
  /// testing
  console.log (`Years to level 10:${calculateYearsToPromotion(7)}`); // Answer:  "Years to Level 10: 6")
