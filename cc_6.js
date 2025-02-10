@@ -44,7 +44,7 @@ console.log (calculateSubscriptionCost("Premium", 12, 0)); // Should "Total Cost
 //Task 5- Returning Values 
 function convertCurrency(amount, exchangeRate) {
     let converted = amount * exchangeRate ;
-    return `Converted Amount:$${ convert.toFixed(2) } `// coverting currency 
+    return `Converted Amount:$${converted.toFixed(2) } `// coverting currency 
 }
 // Testing Data 
 console.log(convertCurrency(100, 1.1)); // Expected output: "Converted Amount: $110.00")
