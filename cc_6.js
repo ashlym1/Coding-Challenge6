@@ -53,7 +53,7 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
 // Task 6- Higher-order Functions 
  let orders = [200, 600, 1200, 450, 800 ];// the array of orders 
  function applyBulkDiscount(orders,discountFunction) { 
-    return orders.map(amount=>discountFunction(ammount)); // Applies 10% discount on order 500 and above 
+    return orders.map(amount=>discountFunction(amount)); // Applies 10% discount on order 500 and above 
  }
  // Testing Data :
  console.log(applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount)); // expected : [200, 540, 1080, 450, 720]
