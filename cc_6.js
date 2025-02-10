@@ -60,7 +60,7 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
 
 //Task 7 - Closure 
  function createExpenseTracker () {
-    let totalExpesne= 0 ; 
+    let totalExpenses= 0 ; 
     return function (expense) {
          totalExpense += expense; 
         return`Total Expenses:$$ {totalExpenses}`;
