@@ -76,5 +76,5 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
     if (employeeLevel >= 10) return 0;
  } 
  /// testing
- console.log (calculateYearsToPromotion(7)); // Answer:  "Years to Level 10: 6")
- console.log (calculateYearsToPromotion(5)); // Expected output: "Years to Level 10: 10")
+ console.log (`Years to level 10:${calculateYearsToPromotion(7)}`); // Answer:  "Years to Level 10: 6")
+ console.log (`Years to level 10:${calculateYearsToPromotion(5)}`); // Expected output: "Years to Level 10: 10")
