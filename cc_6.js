@@ -32,6 +32,7 @@ function calculateSubscriptionCost(plan,months,discount= 0 ) {
      if(plan==="Basic") pricePerMonth= 10; 
     else if(plan==="Premium")pricePerMonth = 20;
    else if (plan==="Enterprise") pricePerMonth= 50;
+   else return "Invalid Plann";
 let totalCost = (pricePerMonth * months)- discount;
 return "Total Cost : $" + totalCost;
 }
@@ -42,7 +43,8 @@ console.log (calculateSubscriptionCost("Premium", 12, 0)); // Should "Total Cost
 //Task 5- Returning Values 
 function convertCurrency(amount, exchangeRate) {
     let converted = amount * exchangeRate ;
-    return `Converted Amount:$`+ convert.toFixed(2) } // coverting currency 
+    return `Converted Amount:$${ convert.toFixed(2) } `// coverting currency 
+}
 // Testing Data 
 console.log(convertCurrency(100, 1.1)); // Expected output: "Converted Amount: $110.00")
 console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: $212.50")
@@ -50,10 +52,10 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
 // Task 6- Higher-order Functions 
  let orders = [200, 600, 1200, 450, 800 ];// the array of orders 
  function applyBulkDiscount(orders,discountFunction) { 
-    return orders.map(amount=>discountFunction(amount)); // Applies 10% discount on order 500 and above 
+    return orders.map(amount=>discountFunction(ammount)); // Applies 10% discount on order 500 and above 
  }
  // Testing Data :
- console.log(applyBulkDisocunt(orders,amount=> amount > 500 ? amount *0.9;amount ); // expected : [200, 540, 1080, 450, 720]
+ console.log(applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount)); // expected : [200, 540, 1080, 450, 720]
 
 //Task 7 - Closure 
  function createExpenseTracker () {
@@ -70,10 +72,9 @@ console.log(convertCurrency(250, 0.85)); // Expected output: "Converted Amount: 
 
 // Task 8 - Recursion in Java Script 
  function calculateYearsToPromortion(employeeLevel){
-    if(employeeLevel >=10) return 0; 
-retur 2 + calculatedYeasrToPromotion(employeeLevel+1); 
+    if(employeeLevel >= 10) return 0; 
+return 2 + calculatedYeasrToPromotion(employeeLevel+1); 
     }
- }else return "yeasr to level 10: ${(10-employementLevel) *2];
  /// testing
  console.log (calculateYearsToPromotion(7)); // Answer:  "Years to Level 10: 6")
  console.log (calculateYearsToPromotion(5)); // Expected output: "Years to Level 10: 10")
