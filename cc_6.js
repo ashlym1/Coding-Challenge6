@@ -17,10 +17,11 @@ console.log(calculateSalesTax(500, 0.1));  // Expected output: "Sales Tax: $50"
 
 // Task 3- Arrow Functions 
 const calculateBonus= (salary,performanceRating ) => {
-     if (performanceRating.toLowerCase() === "Excellent") return salary *0.2; // calculating for bonus
-    else if (performanceRating.toLowerCase==="Good") return salary * 0.1;
-else if (performanceRating.toLowerCase=== "Average") return salary *0.05 };
+     if (performanceRating === "Excellent") return salary *0.2; // calculating for bonus
+    else if (performanceRating ==="Good") return salary * 0.1;
+else if (performanceRating === "Average") return salary *0.05 
 return 0; 
+};
 
   // Testing Data
 console.log(calculateBonus(5000, "Excellent")); // Expected output: "Bonus: $1000")
